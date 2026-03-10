@@ -29,7 +29,7 @@ function App() {
 
   function handleDuration(event) {
     let value = Number(event.target.value);
-    setDuration(value)
+    value > 0 ? setDuration(value) : setDuration(1);
   }
 
   let CalInvest = {
